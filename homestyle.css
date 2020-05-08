@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Images/scenery.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 18px;
+    border: 1px solid white transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    color: black;
+    background-color: white;
+}
+ul li.active a{
+    color: black;
+    background-color: white;   
+}
+.sub-main {
+    display: none;
+}
+.main ul li:hover .sub-main{
+    display: block;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+.main ul li:hover .sub-main ul li{
+    display: block;
+    margin: 15px;
+    margin-top: 0;
+    margin-left: 0px;
+    padding: 3px;
+    
+}
+.sub-main ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.sub-main-2{
+    display: none;
+}
+.main ul li .sub-main-1:hover .sub-main-2{
+    display: block;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+.main ul li .sub-main-1:hover .sub-main-2 ul li{
+    display: block;
+    margin: 55px;
+    margin-top: -41px;
+    margin-left: 85px;
+
+
+}
+
+.main .fa{
+    margin-right: 6px;
+}
+.logo img{
+    float: left;
+    width:125px;
+    height:auto;
+    margin-top: 10px;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: white;
+    font-size: 70px;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+    
+}
+.button{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: 0.6s ease;
+    margin: 3px;
+}
+.btn:hover{
+    color: black;
+    background-color: white;   
+}
+.main .fa-angle-right{
+    float: right;
+    font-size: 20px;
+}
